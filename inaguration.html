@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="2nDrO - Medical Healthcare">
+  <title>When it matters the most</title>
+  <link href="assets/images/favicon/favicon.png" rel="icon">
+
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;family=Roboto:wght@400;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/libraries.css">
+<link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+<div class="curtain">
+  <div class="curtain__wrapper">
+    <input type="checkbox" checked id="myCheckbox">
+    
+    <div class="curtain__panel curtain__panel--left ">
+      <div class='half-circle half-circle-left'><h1 class='text-right'>HO</h1></div>
+    </div> <!-- curtain__panel -->
+    
+    <div class="curtain__panel curtain__panel--right">
+    <div class='half-circle half-circle-right' ><h1 class='text-left'>ME</h1></div>
+    </div> <!-- curtain__panel -->
+    
+    <div class="curtain__content">
+      <h2>Loading...</h2>
+    </div>
+    
+    
+  </div> <!-- curtain__wrapper -->
+</div> <!-- curtain -->
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#myCheckbox').change(function(){ 
+                if (!$(this).is(':checked')) {
+                  setTimeout(function() {
+                    window.location.href = 'index.php';
+                    }, 1500);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

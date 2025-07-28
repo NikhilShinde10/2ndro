@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="11"><page Index="1"><![CDATA[For Patient Registration / Patient Appointment
+
+
+              Go to our Website : https://www.2ndro.com/
+
+              Then go to Patient Registration Page
+              You will see this window
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              For Schedule an appointment
+
+              Click on this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              A patient/user has to enter his/her mobile number and after that click on             and then
+              enter OTP and click on               to verify the mobile number.]]></page><page Index="2"><![CDATA[A patient has to fill the personal information like Mobile No, Patient Name, Email, Gender, Date
+              of Birth, Address, State and City. Click on button                to  move  forward  to
+              Schedule an Appointment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Registration Payment Details
+
+              A User/Patient will move forward to Payment Gateway for the registration fees. User/Patient click on
+
+                                  button to proceed payment.]]></page><page Index="3"><![CDATA[Now User/Patient need to choose payment options. After choosing payment option he/she
+               needs to enter his/her payment details and pay the registration fees.
+
+               After successful registration payment, User will direct to Payment successful window with
+               some payment details like Order ID, Payment Gateway Reference No., Bank Ref. No., Order
+               Date. Click on close button then it will direct to appointment window to complete steps.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Clinical Details
+
+              A patient has to fill the form and it is mandatory for completing patient registration. This
+              form includes some questions to ask doctors, current symptoms, Past Medical History and
+              Social History.]]></page><page Index="4"><![CDATA[Upload Reports
+
+             In Upload Reports patient can upload his/her reports but it has to agree Terms and Conditions
+             before uploading reports. If patient wants to upload reports it has to specify the date of report,
+             type of report, Name of Lab/Hospital where report was generated and description of the
+             reports. Reports can be in pdf, png or jpg formats.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Upload Study
+
+             In Upload Study patient can upload his/her DICOM studies but it has to agree Terms
+             and Conditions before uploading Studies. After uploading studies patient has to
+             specify the type of study. Study size can be maximum 1GB. If patients want to delete
+             study images after uploading simply select the image which patient want to delete
+             and click on  button.
+
+             Appointment Completion
+
+
+
+             After that click on             button to complete the appointment. Patient will be contacted
+             via SMS after his/her request has been reviewed.]]></page><page Index="5"><![CDATA[In Admin Window, after checking all the reports admin give appointment to the patient.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               When Admin gives appointment to the patient, Patient receives
+
+               this SMS.]]></page><page Index="6"><![CDATA[After Clicking the link this page comes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               After selecting the doctor when patient did the payement,
+
+               This SMS comes to the doctor.]]></page><page Index="7"><![CDATA[And this SMS  comes to the patient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               After that Patient will see on the doctor’s window]]></page><page Index="8"><![CDATA[When Doctor click on the Green Button & Patient Click on the link on scheduled time Video
+               Consultation Start.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               After 5 Minutes this pop up comes on the doctor’s screen.
+               If the doctor wants to extend the time then he should click on yes button otherwise the
+               consultation will end automatically in next 10 minutes.]]></page><page Index="9"><![CDATA[When Session ended Feedback Form appears]]></page><page Index="10"><![CDATA[After giving feedback patient will receive SMS of Receipt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              After clicking the link patient will get their payment receipt]]></page><page Index="11"><![CDATA[Also patient will receive SMS of Advisory Report
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                After clicking the link patient will get their Advise Report]]></page></pages></Search>

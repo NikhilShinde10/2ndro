@@ -1,0 +1,134 @@
+
+
+<div class="wide form">
+
+<?php  $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'Testimonial-form',
+	// Please note: When you enable ajax validation, make sure the corresponding
+	// controller action is handling ajax validation correctly.
+	// There is a call to performAjaxValidation() commented in generated controller code.
+	// See class documentation of CActiveForm for details on this.
+	'enableAjaxValidation'=>false,
+	'htmlOptions' => array('enctype'=>'multipart/form-data'),	
+)); ?>
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php  echo $form->errorSummary($model); ?>
+
+	<div class="row">
+		<div class="col-sm-2 control-label">
+		<?php  echo $form->labelEx($model,'title'); ?>
+		</div>
+		<div class="col-md-10">
+		<?php  echo $form->textField($model,'title',array('size'=>60,'maxlength'=>500)); ?>
+		</div>
+		<?php  echo $form->error($model,'title'); ?>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-2 control-label">
+		<?php  echo $form->labelEx($model,'description'); ?>
+		</div>
+		<div class="col-md-10">
+		<?php  echo $form->textArea($model,'description',array('class'=>'form-control','rows' => 6, 'style'=>'width:500px')); ?>
+		</div>
+		<?php  echo $form->error($model,'description'); ?>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 control-label">
+		<label> Current Image </label>	
+		</div>	
+		<div class="col-md-10">
+		<?php 
+				$ext = explode(".",$model->logo);
+				$ext = end($ext);
+				$filen=$model->id."-testimonial.".$ext;
+				$path=Yii::app()->baseurl.DIRECTORY_SEPARATOR.'uploads/testimonial/'.$model->logo; 			
+				echo CHtml::image($path,' ', array('width'=>'250px'));
+		?>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-sm-2 control-label">
+			<?php  echo $form->labelEx($model,'logo'); ?>
+		</div>
+		<div class="col-md-10">
+			<?php  echo $form->fileField($model,'logo',array()); ?>
+		</div>
+		<?php  echo $form->error($model,'logo'); ?>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 control-label">
+		<label> Current Banner </label>	
+		</div>	
+		<div class="col-md-10">
+		<?php 
+				$path=Yii::app()->baseurl.DIRECTORY_SEPARATOR.'uploads/testimonial/'.$model->banner; 			
+				echo CHtml::image($path,' ', array('width'=>'250px'));
+		?>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-sm-2 control-label">
+			<?php  echo $form->labelEx($model,'banner'); ?>
+		</div>
+		<div class="col-md-10">
+			<?php  echo $form->fileField($model,'banner',array()); ?>
+		</div>
+		<?php  echo $form->error($model,'banner'); ?>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 control-label">
+			<?php  echo $form->labelEx($model,'sort'); ?>
+		</div>
+		<div class="col-md-10">
+			<?php  echo $form->textField($model,'sort'); ?>
+		</div>
+		<?php  echo $form->error($model,'sort'); ?>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 control-label">
+			<?php  echo $form->labelEx($model,'exits'); ?>
+		</div>
+		<div class="col-md-10">
+		<?php  
+                        $this->widget('ext.select2.ESelect2',array(
+                        'model'=>$model,
+                        'attribute'=>'exits',
+                        'data'=>array('0'=>'No','1'=>'Yes'),
+                        'htmlOptions'=>array(
+                         'style'=>'width:200px;'       
+                        ),
+                        )); 
+                ?>
+		</div>
+		<?php  echo $form->error($model,'exits'); ?>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-2 control-label">
+			<?php  echo $form->labelEx($model,'active'); ?>
+		</div>
+		<div class="col-md-10">
+		<?php  
+                        $this->widget('ext.select2.ESelect2',array(
+                        'model'=>$model,
+                        'attribute'=>'active',
+                        'data'=>array('0'=>'Inactive','1'=>'Active'),
+                        'htmlOptions'=>array(
+                        'placeholder'=>'-- Select Status --',
+                         'style'=>'width:200px;'       
+                        ),
+                        )); 
+                ?>
+		</div>
+		<?php  echo $form->error($model,'active'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php  echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	</div>
+
+<?php  $this->endWidget(); ?>
+
+</div><!-- form -->

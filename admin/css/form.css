@@ -1,0 +1,106 @@
+
+div.form_wrap {
+	margin: 0 auto;
+	width: 800px;
+}
+
+div.form_body {
+	background-color: #FFFFFF;
+	padding: 10px 30px 10px 30px;
+}
+
+div.form .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.9em;
+}
+
+div.form .errorMessage
+{
+	color: red;
+	font-size: 0.9em;
+	/*padding:0px !important;*/
+}
+div.form .errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+}
+
+div.form .errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+div.wide.form textarea{
+	resize:none;
+	background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #CCCCCC;
+    border-collapse: separate;
+    border-radius: 4px;
+    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);*/
+    color: #555555;
+    display: table-cell;
+    float: left;
+    font-size: 14px;
+    line-height: 1.42857;
+    width:232px;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    z-index: 2;
+}
+
+div.wide.form label
+{
+	float: left;
+	/*margin-right: 10px;*/
+	position: relative;
+	text-align: left;
+	font-weight:normal;
+	width:180px;
+	padding-right:10px;
+}
+
+div.wide.form .row
+{
+	clear: left;
+}
+
+div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
+{
+	clear: left;	
+}
+
+div.form.wide.Well label
+{
+	float: left;
+	margin-right: 40px;
+	position: relative;
+	text-align: left;
+	width: 200px;
+}
+div.wide.form .form-control {
+    display: block;
+    width: auto;
+	min-width:220px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85);
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+div.wide.form .row {
+   margin:5px;
+}

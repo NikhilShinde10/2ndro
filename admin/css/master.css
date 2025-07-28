@@ -1,0 +1,145 @@
+h1 {
+    color: #00AFD8;
+    font: bold 25px Arial;
+    margin-top: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+.grid-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+
+.grid-view
+{
+	/*padding: 15px 0;*/
+}
+
+.grid-view table
+{
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px #D0E3EF solid;
+}
+
+.grid-view table th, .grid-view table td
+{
+	/*font-size: 0.9em;*/
+	font-size: 12px;
+	border: 1px white solid;
+	padding: 0.3em;
+}
+
+.grid-view table th
+{
+	color: white;
+	background-color: #00AFD8;
+	/*background: url("../../../images/bg-nav.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);*/
+	text-align: center;
+	height:30px;
+}
+.grid-view table th,.grid-view table tr td
+{
+ border:1px solid black;
+border-collapse:collapse;
+}
+.grid-view table th a
+{
+	color: #EEE;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.grid-view table th a:hover
+{
+	color: #FFF;
+}
+
+.grid-view table th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table tr.even
+{
+	background: #F1F1F1;
+	height:40px;
+}
+
+.grid-view table tr.odd
+{
+	background: #F1F1F1;
+	height:40px;
+}
+
+.grid-view table tr.selected
+{
+	background: #BCE774;
+}
+
+.grid-view table tr:hover.selected
+{
+	background: #CCFF66;
+}
+
+.grid-view table tbody tr:hover
+{
+	background: #e7cccd;
+}
+
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 60px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.grid-view .pager
+{
+	margin: 5px 0 0 0;
+	text-align: right;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+.grid-view .filters input, .grid-view .filters input[type="text"], [type="password"] {
+    height: 22px !important; 
+}

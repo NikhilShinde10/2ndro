@@ -1,0 +1,310 @@
+/*@import "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css";*/
+
+$darkgrey: #969696; $grey: #c2c2c2; $lightgrey: #f0f0f0; $white: #fcfcfc; $bordergrey: #dadada; $black: #333; $buttonhover: #eaeaea; $link: #1b75bb; $green: #439b18;
+
+// Helper classes
+.clearfix:after { clear: both; display: block; content: " "; height: 0; visibility: hidden;}
+.clearfix {	display: inline-block; }
+.oneliner { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+// Firefox3 fix
+html>/**/body .oneliner, x:-moz-any-link { white-space: normal; }
+
+.thisToFlexContainer { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: flex; }
+.thisToFlexWidthOne { -webkit-box-flex: 1; -moz-box-flex: 1; -webkit-flex: 1; flex: 1; }
+.thisToFlexWidthTwo { -webkit-box-flex: 2; -moz-box-flex: 2; -webkit-flex: 2; flex: 2; }
+
+// Main
+.wrapper { font-size: 0.6875em; color: $black; }
+h2 { margin: 0; padding: .5em; border-bottom: 1px solid $lightgrey; font-weight: normal; }
+p { padding: 0 1em; }
+ul { list-style-type: none; margin: 0; padding: 0; }
+.label { color: $darkgrey; }
+.value { color: $black; }
+.value.link { color: $link; cursor: pointer; }
+.bold { font-weight: bold; }
+
+// Every Block
+.additional-block { background: $white; border: 1px solid $bordergrey; margin: 1em; position: relative; 
+  .clearfix { width: 100%; display: block; }
+  .label, .value { @extend .oneliner; display: inline-block; }
+}
+
+// Estateinfo
+.estateinfo-block {}
+.box-container{@extend .thisToFlexContainer; width: 100%;}
+.image-container{padding:1em 0 0 1em;}
+.estate-info { @extend .thisToFlexWidthOne; padding: 1em;
+  h2{border:none; padding: 0 0 0 0;}
+  .item { @extend .thisToFlexContainer; line-height: 1.7; width: 100%;
+    .label { width: 12em; padding: 0; }
+    .value { @extend .thisToFlexWidthOne; padding: 0; }
+  }
+}
+
+.buttons { width: 17em;
+  li { text-align: left; background: $lightgrey; cursor: pointer; padding: 1.2em 1em 1.2em 2em; position: relative; 
+    i { display:inline-block; font-size: 14px; padding-right: .5em; width: 1em; }
+    &:hover { background: $buttonhover; }
+  }
+  .moregroup { display: none; width: 17em; position: absolute; left: 0; top: 3.8em; z-index: 10;
+    li { position: relative; background: darken($lightgrey,5); padding-left: 4.5em; padding-top: .6em; padding-bottom: .5em; 
+      &:hover { background: darken($buttonhover,8); }
+    }
+  }
+  h2 ~ & { position: absolute; top: 0; right: 0; }
+}
+
+// Carousel
+.carousel-block { background: $white; border-bottom: 1px solid $bordergrey; white-space: nowrap; overflow-x: scroll;
+  .container { display: inline-block; padding: 1em 0 1em 0; margin-left: 1em; text-align: center; 
+    &:hover { background: $lightgrey; }
+  }
+  .container:last-child { padding-right: 1em; }
+  img { display: inline-block; width: 10em; height: 10em; background: $lightgrey; cursor: pointer; }
+  .description { @extend .oneliner; color: $darkgrey; cursor: pointer; width: 10em; margin: 0; padding: 0;
+    &:hover { color: $black; }
+  }
+}
+
+// Address details
+.address-details { padding: 1em 0;
+  .item { width: 29em; display: inline-block; margin-right: 1em; line-height: 1.7;
+    .label, .value { padding: 0 1em; }
+    .label { width: 8em; }
+    .value { width: 17em; }
+  }
+}
+
+// Relations
+.relations-block, .activities-block, .searchprofiles-block {
+  .item { @extend .thisToFlexContainer; line-height: 2; width: 100%;
+    i { display: inline-block; width: 2em; font-size: 14px; text-align: center; color: $black; line-height: 1.6; 
+      &[class=icon-ok-sign] { color: $green; }
+    }
+    .undone { opacity: .2; color: $green; }
+  }
+  p { margin: 0; color: $darkgrey; padding: 0 1em 0 0; }
+  .label { width: 10.5em; }
+  .value { @extend .thisToFlexWidthOne; height: 1.5em; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+  .description { width: 13em; /* Chrome 12em */ }
+
+  // Gives first and last item a margin for a nice distance within the block
+  h2 + .item, .buttons + .item { margin-top: 1em; }
+  .item:last-child { margin-bottom: 1em; }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-block {
+    img {
+      width: 20em;
+      height: 20em; 
+    }
+    .description { width: 20em; }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-block {
+    img {
+      width: 5em;
+      height: 5em; 
+    }
+    .description { width: 5em; }
+  }
+}
+
+
+
+.additional-block {
+background: #fcfcfc;
+border: 1px solid #dadada;
+margin: 1em;
+position: relative;
+}
+.box-container {
+width: 100%;
+}
+.image-container {
+padding: 1em 0 0 1em;
+}
+.wrapper {
+font-size: 0.6875em;
+color: #333333;
+}
+.estate-info {
+padding: 1em;
+}
+.estate-info h2 {
+border: none;
+padding: 0 0 0 0;
+}
+.estate-info .item {
+line-height: 1.7;
+width: 100%;
+}
+.estate-info .item .value {
+padding: 0;
+}
+.buttons {
+width: 17em;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.buttons li {
+text-align: left;
+background: #f0f0f0;
+cursor: pointer;
+padding: 1.2em 1em 1.2em 0;
+position: relative;
+}
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+.buttons li i {
+display: inline-block;
+font-size: 14px;
+padding-right: .5em;
+width: 1em;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+display: inline;
+width: auto;
+height: auto;
+line-height: normal;
+vertical-align: baseline;
+background-image: none;
+background-position: 0% 0%;
+background-repeat: repeat;
+margin-top: 0;
+}
+.buttons {
+width: 17em;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+
+}
+.estate-info {
+    padding: 1em;
+}
+.thisToFlexWidthOne, .estate-info, .estate-info .item .value, .relations-block .value, .activities-block .value, .searchprofiles-block .value {
+    -moz-box-flex: 1;
+    flex: 1 1 0;
+}
+
+element.style {
+    min-width: 980px;
+}
+.address-details .item .value {
+    width: 17em;
+}
+.address-details .item .label, .address-details .item .value {
+    padding: 0 1em;
+}
+
+.address-details {
+padding: 1em 0;
+}
+p {
+padding: 0 1em;
+}
+
+user agent stylesheetp {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+
+.address-details .item {
+    display: inline-block;
+    line-height: 1.7;
+    margin-right: 1em;
+    width: 39em;
+}
+.thisToFlexContainer, .box-container, .estate-info .item, .relations-block .item, .activities-block .item, .searchprofiles-block .item {
+    display: flex;
+}
+
+element.style {
+    min-width: 980px;
+}
+
+html > body .oneliner, html > body .additional-block .label, .additional-block html > body .label, html > body .additional-block .value, .additional-block html > body .value, html > body .carousel-block .description, .carousel-block html > body .description, x:-moz-any-link {
+    white-space: normal;
+}
+.additional-block .label, .additional-block .value {
+    display: inline-block;
+}
+.oneliner, .additional-block .label, .additional-block .value, .carousel-block .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.value {
+    color: #333333;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+ul {
+    list-style-type: none;
+}
+table
+{
+	table-layout:fixed;
+}
+.address-details tr td
+{
+	font-size:12px;
+	width:120px;
+}
+.address-details tr td.label
+{
+	font-weight:bold;
+	color:#97030F;
+}
+.address-details tr td.value
+{
+}
+.additional-block h2
+{
+	font-size:17px;
+}
+
+.address-details .item .label, .address-details .item .value {
+    padding: 0px 1em;
+	font-size:11px;
+	font-weight:bold;
+}
+.status_block
+{
+	font: bold 12pt Arial;
+}
+.value{
+	font-size: 12px !important;
+}
+a {
+    color: #8C0209;
+    font-size:11px;
+}

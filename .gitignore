@@ -1,0 +1,70 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore logs
+*.log
+logs/
+error_log
+
+# Ignore environment/config files
+.env
+config.php
+config1.php
+
+# Ignore uploads/backups/zips
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.bak
+*.tmp
+
+# Ignore Apache/.htaccess rewrite logs (optional)
+.htaccess
+
+# Ignore node/npm stuff (if accidentally present)
+node_modules/
+npm-debug.log
+
+# Ignore Composer dependencies (if not used or will rebuild)
+vendor/
+
+# Ignore cache/session/temp folders (common in PHP apps)
+cache/
+tmp/
+sessions/
+*.cache
+
+# Ignore database dumps
+*.sql
+*.sqlite
+
+# Ignore OS-specific folders
+__MACOSX/
+
+# Ignore compiled files
+*.compiled
+*.class
+*.pyc
+*.pyo
+
+# Ignore user-specific files
+*.swp
+*.swo
+
+# Ignore backup files created by editors
+*~
+*.bak
+*.old
+*.orig
+
+# Ignore Copilot chat files (optional)
+copilot.*

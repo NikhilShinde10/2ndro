@@ -1,0 +1,29 @@
+<?php 
+/* @var $this CertificationsController */
+/* @var $data Certifications */
+?>
+
+<div class="view">
+
+	<b><?php  echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
+	<?php  echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
+	<br />
+
+	<b><?php  echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
+	<?php  echo CHtml::encode($data->title); ?>
+	<br />
+
+	<b><?php  echo CHtml::encode($data->getAttributeLabel('total_no')); ?>:</b>
+	<?php  echo CHtml::encode($data->total_no); ?>
+	<br />
+
+	<b><?php  echo CHtml::encode($data->getAttributeLabel('created_at')); ?>:</b>
+	<?php  echo CHtml::encode($data->created_at); ?>
+	<br />
+
+	<b><?php  echo CHtml::encode($data->getAttributeLabel('active')); ?>:</b>
+	<?php  echo CHtml::encode($data->active); ?>
+	<br />
+
+
+</div>
